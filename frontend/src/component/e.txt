@@ -1,0 +1,37 @@
+if(result.data.status=="success"){
+  navi('/successt')
+  }
+  else{
+    navi('/errort')
+  }
+
+if(a=="true"){
+        res.json({
+            status:"success",
+            message:'done'
+        })
+    }
+    else{
+        res.json({
+            status:"success",
+            message:'done'
+        })
+    }
+
+   res.json({
+            status:"success",
+            message:'done'
+        })
+
+
+         res.json({
+            status:"success",
+            message:'done'
+        })
+    }catch(err){
+        console.log("failed")
+        res.json({
+            status:"failed",
+            message:'error'
+        })
+    }

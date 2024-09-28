@@ -1,0 +1,58 @@
+"" convert this code to module.css format and "" this to jsx format that matches the module.css code
+import styles from "./assets/createclassroom.module.css"
+
+<>
+             <div>
+      {/* Navbar */}
+      <nav className={styles.navbar}>
+        <div className={styles.navbarContainer}>
+          <ul className={styles.navLinks}>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* Main Section */}
+      <section className={styles.mainContent}>
+        <div className={styles.container}>
+          <h1>Enter Colege Name</h1>
+          <form id="classForm" onSubmit={sumit}>
+            <input
+              type="text"
+              id="className"
+              name="className"
+              placeholder="College name Name"
+              onChange={(e)=>setClg(e.target.value)}
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      {/* Footer */}
+    
+    </div>
+
+            {workresult?
+            <>
+            <table className={styles.tableContainer}>
+  <thead>
+    <tr>
+      <th>Teacher name</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    {stdata.map((dtat) => (
+      <tr key={dtat.rollno}>
+        <td data-label="Roll no">{dtat.username}</td>
+        <td data-label="Student name">{dtat.phone}</td>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+</>

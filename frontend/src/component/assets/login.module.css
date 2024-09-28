@@ -1,0 +1,154 @@
+/* General Styling */
+:global(*) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    background-color: #213141; /* Light yellow background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: backgroundFade 4s ease-in-out infinite alternate; /* Background Animation */
+}
+
+/* Background animation */
+@keyframes backgroundFade {
+    0% { background-color: #213141; }
+    /* 50% { background-color: #536c3a; } */
+    100% { background-color: #131f33; }
+}
+
+nav {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navItem {
+    margin: 0 20px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #1abc9c;
+}
+
+/* Login Form Styles */
+.loginContainer {
+    background-color: #d2d6d6;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin: 150px auto;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.inputFieldContainer {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.inputField:focus {
+    border-color: #2196f3;
+    outline: none;
+    background-color: #e8f0fe;
+}
+
+.inputField::placeholder {
+    color: #999;
+}
+
+/* Button Animation */
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Button grow on hover */
+}
+
+.button:hover {
+    background-color: #1769aa;
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+.registerText {
+    margin-top: 20px;
+}
+
+.registerLink {
+    color: #2196f3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.registerLink:hover {
+    color: #1769aa;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
